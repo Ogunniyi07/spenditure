@@ -60,7 +60,10 @@ function About() {
           <div className="news">
             <h2>Want our Latest Updates?</h2>
             <p>Subscribe to our newsletter</p>
-            <input type="email" placeholder="Email" />
+            <div className="sub">
+              <input type="email" placeholder="Email" />
+              <input type="submit" />
+            </div>
           </div>
         </div>
       </div>
