@@ -7,6 +7,11 @@ function Footer() {
       <div className="footer">
       <div className="footer-box">
         <ul>
+          <img src="/images/footer-logo.svg" />
+        </ul>
+      </div>
+      <div className="footer-box">
+        <ul>
           <h5>Company</h5>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Contact Us</a></li>

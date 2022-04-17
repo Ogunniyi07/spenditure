@@ -387,6 +387,11 @@ p a{
 .footer-box{
   width:30%;
 }
+.footer-box img{
+  width:50%;
+  height:100%;
+  padding-top:60px;
+}
 .footer-box h5{
   font-size: 20px;
   font-weight: 700;
@@ -761,6 +766,12 @@ input[type="submit"]{
     width:100%;
     text-align: center;
   }
+  .footer-box img{
+    width:15%;
+    height:50%;
+    padding-top:0px;
+    padding-bottom:20px;
+  }
   input[type=text]{
     width:60%;
   }
@@ -912,14 +923,7 @@ input[type="submit"]{
   .navigation{
     height:10vh;
   }
-  .navbar-brand{
-    padding:6px 10px;
-  }
-  .close,
-  .open{
-    font-size: 22px;
-    top:20px;
-  }
+ 
   .navigation .navbar-list .nav-links-mobile{
     top: 60px;
   }
@@ -988,7 +992,10 @@ input[type="submit"]{
     align-items: center;
     justify-content: center;
   }
-
+  .footer-box img{
+    width:25%;
+    height:50%;
+  }
   /* About Page */
   .about-img img{
     width: 80%;
