@@ -7,16 +7,30 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Open a Spenditure account in 5 minutes, qualify for loans when you use it regularly. Download Spenditure and use your Spenditure account regularly to qualify for instant loans."
     />
     <link
       rel="stylesheet"
       href="/src/App.css"
     />
-    <title>React App</title>
+    <title>Spenditure</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      const x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+    </script>
     <div id="root"></div>
   </body>
 </html>
