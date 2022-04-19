@@ -25,9 +25,6 @@ function Contact() {
             <img src="/images/aboutus2.png" alt="" />
           </div>
         </div>
-        <div className="slide">
-          <div className="slide-img"></div>
-        </div>
           </div>
     </div>
   );

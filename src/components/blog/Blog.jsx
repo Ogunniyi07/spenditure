@@ -3,10 +3,17 @@ import { Outlet } from "react-router-dom";
 
 function Blog() {
   return (
-    <div className="home">
+    <div className="blog">
       <div class="container">
-        <h1 className="text-center mt-5">Blog page</h1>
-        <Outlet />
+        {/* <div className="blog-head">
+          <div className="blog-text">
+            <h2>WELCOME TO OUR BLOG PAGE</h2>
+          </div>
+        </div>
+        <div className="updates">
+          <h2>UPDATES</h2>
+
+        </div> */}
       </div>
     </div>
   );
