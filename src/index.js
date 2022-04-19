@@ -9,6 +9,7 @@ import {
   Home,
   About,
   Contact,
+  Services,
   Blog,
   Posts,
   Post,
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
