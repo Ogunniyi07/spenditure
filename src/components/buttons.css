@@ -4,16 +4,31 @@
     width:100%;
     height:max-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #eeeeee;
+    background-color:  #23273C;
+}
+.signup-container .head{
+    width:50%;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-container .head p{
+    color:#ffffff;
+    font-size: 24px;
+    margin-bottom:40px;
 }
 .signup-con{
     width:50%;
     height:max-content;
+    border-radius: 24px;
     background-color: #ffffff;
 }
-.signup-head{
+/* .signup-head{
     width:100%;
     height:max-content;
     display:flex;
@@ -43,13 +58,21 @@
     width:50%;
     height:50%;
     object-fit: contain;
-}
+} */
 .signup-text{
     padding:20px 50px;
     text-align: center;
 }
+.signup-text h2,
+.signup-text p a{
+    color:red;
+}
+.signup-text p{
+    padding-bottom:20px;
+}
+
 .signup-details{
-    padding:80px 40px;
+    padding:30px 40px;
 }
 .signup-details button{
     color:#000000;

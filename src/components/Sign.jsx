@@ -6,12 +6,16 @@ function Sign() {
   return (
     <div className="signup">
       <div class="signup-container">
+      <div className="head">
+      <img src="/images/spenditure.png" alt="" />
+      <p>SPENDITURE</p>
+      </div>
           <div className="signup-con">
-            <div className="signup-head">
+            {/* <div className="signup-head">
               <div className="title">
-                {/* <NavLink className="signup-logo" to="/">
+                <NavLink className="signup-logo" to="/">
                   <img src="/images/nav-logo.svg" alt="" />
-                </NavLink> */}
+                </NavLink>
               </div>
               <div className="signin">
                 <a href="signup">SignUp</a>
@@ -19,9 +23,10 @@ function Sign() {
             </div>
             <div className="signup-img">
               <img src="/images/rafiki.png" alt="" />
-            </div>
+            </div> */}
             <div className="signup-text">
-              <h2>SignIn to your Account</h2>
+              <h2>Sign in to your account</h2>
+              <p>Dont have an account?  <a href="signup">SignUp</a></p>
             </div>
             <div className="signup-details">
               <p>Email/Mobile Number</p>
