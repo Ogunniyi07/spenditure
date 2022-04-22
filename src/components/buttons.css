@@ -51,6 +51,9 @@
 .signup-details{
     padding:80px 40px;
 }
+.signup-details button{
+    color:#000000;
+}
 .signup-details p{
     padding: 20px 0px 10px 0px;
 }
