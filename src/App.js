@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "src\components\buttons.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
@@ -10,6 +11,8 @@ import {
   Contact,
   Blog,
   Services,
+  Sign,
+  Signup,
 } from "./components";
 
 ReactDOM.render(
@@ -22,6 +25,8 @@ ReactDOM.render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/sign" element={<Sign />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   </Router>,
 

@@ -5,7 +5,22 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
-
+}
+/*Custom Scroll Bar CSS*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #F1F1F1;
+}
+::-webkit-scrollbar-thumb{
+  width: 5px;
+  background: #23273C;
+  border-radius:12px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #23273C;
+  border-radius:12px;
 }
 h2{
   font-size:35px;
@@ -296,15 +311,87 @@ p a{
 .box p{
   text-align: center;
 }
+/* Testimonial CSS */
+.testimonial{
+  width:100%;
+  height:max-content;
+  padding:100px 20px 20px 40px;
+}
+.testimonial h2{
+  text-align: center;
+}
+.test-grid{
+  width:100%;
+  height:max-content;
+  display:flex;
+  flex-direction:row;
+  overflow-x:auto;
+  padding:20px 20px 20px 20px;
+}
+.test-box{
+  width:25%;
+  height:50vh;
+  flex-shrink: 0;
+  margin-right:25px;
+  border-radius:10px;
+  padding:10px 10px 10px 10px;
+  background-color: #f8f9fa;
+  box-shadow: -5px -5px 10px 8px #f7f5f5;
+}
+.test-icons{
+  width:100%;
+  height:5vh;
+  margin-top:30px;
+}
+.fa-star{
+  color:rgb(121, 157, 235);
+  font-size: 24px;
+}
+.test-text{
+  width:100%;
+  height:15vh;
+  margin-top:30px;
+}
+.test-img{
+  width:100%;
+  height:10vh;
+  margin-top:30px;
+  display:flex;
+  flex-direction: row;
+}
+.test-img p{
+  margin-top:18px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.img-circle{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+}
+.arrow{
+  width:100%;
+  height:10vh;
+  display:flex;
+  justify-content: space-between;
+  padding:10px 20px;
+}
+.Right-arrow,
+.Left-arrow{
+  font-size:24px;
+  cursor: pointer;
+}
+
 /* Download CSS */
 .download{
   width:100%;
   height:max-content;
   padding:50px 50px 50px 50px;
-  background: #6f42c1;
+  background: #23273C;
 }
 .download h2,
 .download p{
+  color:#fff;
   text-align: center;
 }
 .download-store{
@@ -441,7 +528,7 @@ input[type=text]{
   border-radius:12px;
   padding:30px 70px 30px 70px;
   box-shadow:5px 8px 8px #dfdddd; 
-  background-color: #6f42c1;
+  background-color: #23273C;
 }
 .form{
   width:100%;
@@ -483,7 +570,7 @@ input[type=text]{
   justify-content: center;
   align-items: center;
   padding:40px 40px 40px 40px;
-  background-color: #6f42c1;
+  background-color: #23273C;
 }
 .news{
   width:70%;
@@ -491,7 +578,9 @@ input[type=text]{
   text-align: center;
   padding:40px 40px 40px 40px;
 }
-.news p{
+.news p,
+.news h2{
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .sub{
@@ -500,14 +589,14 @@ input[type=text]{
   display:flex;
   flex-direction: row;
 }
-input[type=email]{
+.sub input[type=email]{
   width:100%;
   height: 40px;
   padding-left: 15px;
   font-size: 12px;
   border:2px solid #ced4da;
 }
-input[type="submit"]{
+.sub input[type="submit"]{
   width:15%;
   height: 40px;
   font-size: 14px;
@@ -641,7 +730,6 @@ input[type="submit"]{
   .close{ 
     display: inline;
   }
-  
   .navigation .navbar-list .nav-links-mobile{
     position: absolute;
     top: 70px;
@@ -683,9 +771,10 @@ input[type="submit"]{
     align-items: center;
     height:30vh;
     width:100%;
-    margin-left:240px;
+    margin-left:235px;
     margin-top:50px;
     padding-bottom: 50px;
+
   }
   .navbar-signin,
   .navbar-signup{
@@ -750,6 +839,9 @@ input[type="submit"]{
   .offer-description{
     width:50%;
     padding:200px 10px 20px 50px;
+  }
+  .test-box{
+    width:35%;
   }
   .bottom{
     padding: 70px 20px 50px 40px;
@@ -937,6 +1029,9 @@ input[type="submit"]{
     text-align: center;
     padding:30px 20px 20px 20px;
   }
+  .test-box{
+    width:45%;
+  }
   .box{
     width:80%;
   }
@@ -1034,6 +1129,9 @@ input[type="submit"]{
     width:100%;
     text-align: left;
     padding:30px 20px 20px 20px;
+  }
+  .test-box{
+    width:80%;
   }
   .box{
     width:100%;

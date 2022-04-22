@@ -2,8 +2,8 @@ import React from "react";
 
 function Services() {
   return (
-    <div className="services">
-      <div class="container">
+    <div className="sign">
+      <div class="sign-container">
       
           </div>
     </div>

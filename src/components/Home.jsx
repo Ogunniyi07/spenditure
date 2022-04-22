@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import {FaStar, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import '../App.css';
 
-function Home() {
+
+const Home = () =>{
+
+     //When Arrow Scroll at Bottom
+  window.addEventListener("scroll", function () {
+    const testimonial = document.querySelector(".testimonial")
+    testimonial.classList.arrow("active",window.scrollX > 100)
+  })
+        // Toggle Menu
+const [Slide, setSlide] = useState(false)
   return (
     <div className="body">
       {/* Home Section */}
-      <div className="home">
+      <div className="home" id="#home">
           <div className="home-txt">
            <div className="txt1">
            A simplified way to take charge and control of your finances
@@ -14,7 +24,7 @@ function Home() {
             Create custom budgets, track financial expenditures and discover investment opportunities
             </div>
             <div className="home-btn">
-              <button className="home-signup">Sign Up for Spenditure</button>
+              <a href="signup"><button className="home-signup">Sign Up for Spenditure</button></a>
             </div>
             <div className="download-btn">
               <div className="apple">
@@ -48,7 +58,7 @@ function Home() {
         <div className="finance-description">
           <h2>Get All Your Finances In one App</h2>
           <p>See how you spend by connecting your finances,expense and income.</p>
-          <button>Get Started</button>
+          <a href="signup"><button>Get Started</button></a>
         </div>
       </div>
       {/* What We Offer */}
@@ -116,16 +126,81 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* Testimonial Section */}
+      <div className="testimonial">
+        <h2>Testimonials</h2>
+        <div className="test-grid">
+        <div className="test-box">
+          <div className="test-icons">
+          <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
+          </div>
+          <div className="test-text">
+            <p>This is the best budgeting app i've ever used, it helps me plan all my spendings.</p>
+          </div>
+          <div className="test-img">
+            <div className="img-circle">
+              <img src="/images/Ellipse.png" alt=""/>
+            </div>
+            <p>Charlie Puth</p>
+          </div>
+        </div>
+        <div className="test-box">
+          <div className="test-icons">
+          <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
+          </div>
+          <div className="test-text">
+            <p>A great application, deserves a 5-star</p>
+          </div>
+          <div className="test-img">
+            <div className="img-circle">
+              <img src="/images/Ellipse (1).png" alt="" />
+            </div>
+            <p>Praise Muyiwa</p>
+          </div>
+        </div>
+        <div className="test-box">
+          <div className="test-icons">
+          <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
+          </div>
+          <div className="test-text">
+          <p>Since i started using this app, i've been able to save and allocate money better.</p>
+          </div>
+          <div className="test-img">
+            <div className="img-circle">
+              <img src="/images/Ellipse (2).png" alt="" />
+            </div>
+            <p>Ada Victor</p>
+          </div>
+        </div>
+        <div className="test-box">
+          <div className="test-icons">
+          <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
+          </div>
+          <div className="test-text">
+          <p>Since i started using this app, i've been able to save and allocate money better.</p>
+          </div>
+          <div className="test-img">
+            <div className="img-circle">
+              <img src="/images/Ellipse (3).png" alt="" />
+            </div>
+            <p>Segun Obafemi</p>
+          </div>
+        </div>
+        </div>
+        {/* <div className="arrow"  onClick={() => setSlide(!Slide)}>
+        <i className="Left-arrow"><FaArrowLeft /></i> : <i className="Right-arrow"><FaArrowRight /></i>
+        </div> */}
+      </div>
       {/* Download Section */}
       <div className="download">
         <h2>Download the free App</h2>
         <p>Spend less and secure the future with Spenditure</p>
           <div className="download-store">
             <div className="apple">
-              <a href="#"><img src="images/download-apple.svg" /></a>
+              <a href="#"><img src="images/download-apple.svg" alt=""/></a>
             </div>
             <div className="android">
-              <a href="#"><img src="images/download-google.svg" /></a>
+              <a href="#"><img src="images/download-google.svg" alt=""/></a>
             </div>
           </div>
       </div>

@@ -15,9 +15,9 @@ const Navigation = () => {
   const [Mobile, setMobile] = useState(false)
   return (
 
-    <div className="navigation">  {/*header*/}
-    <div className="navbar-con">  {/*container d_flex*/}
-      <div className="navbar-list">    {/*navlink*/}
+    <div className="navigation" id="#navigation">  
+    <div className="navbar-con">  
+      <div className="navbar-list">   
       <div className="navbar-brand">
             <NavLink className="navbar-logo" to="/">
               <img src="/images/nav-logo.svg" alt="" />
@@ -45,8 +45,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <div className="navbar-btn">
-          <button className="navbar-signin">Sign In</button>
-          <button className="navbar-signup">Create a Free Account</button>
+        <a href="sign"><button className="navbar-signin">Sign In</button></a>
+        <a href="signup"><button className="navbar-signup">Create a Free Account</button></a>
         </div>
     </ul>
       </div>

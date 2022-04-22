@@ -1,0 +1,137 @@
+
+.signup-container{
+    padding: 100px 0px;
+    width:100%;
+    height:max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+.signup-con{
+    width:50%;
+    height:max-content;
+    background-color: #ffffff;
+}
+.signup-head{
+    width:100%;
+    height:max-content;
+    display:flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 5px;
+}
+.signin{
+    margin-top: 12px;
+    margin-right:15px;
+    text-decoration: underline;
+}
+.signin a{
+    font-size: 18px;
+    color:#0a5a9c;
+}
+.signup-img{
+    display: flex;
+    width:100%;
+    height:50%;
+    align-items: center;
+    justify-content: center;
+    padding:50px 20px;
+}
+.signup-img img{
+    width:50%;
+    height:50%;
+    object-fit: contain;
+}
+.signup-text{
+    padding:20px 50px;
+    text-align: center;
+}
+.signup-details{
+    padding:80px 40px;
+}
+.signup-details p{
+    padding: 20px 0px 10px 0px;
+}
+.signup-details input[type=text],
+.signup-details input[type=email],
+.signup-details input[type=number],
+.signup-details input[type=password]{
+    width:100%;
+    height:40px;
+    padding:0px;
+    border-width:0px;
+    font-size: 18px;
+    border-radius: 0;
+    border-bottom: 2px solid #ced4da;
+}
+.rem-section{
+width:100%;
+height:5vh;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top:20px;
+}
+.forgot a{
+    color:#000000;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+.signup-details button{
+    width:100%;
+    height:45px;
+    border: none;
+    border-radius:12px;
+    margin-top:40px;
+    font-size: 18px;
+    background-color: #3CB8C9;
+}
+.signup-details .or{
+    text-align: center;
+}
+.signup-details .googlesign button{
+    width:100%;
+    height:45px;
+    border: 2px solid #e28e86;
+    border-radius:12px;
+    margin-top:10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.signup-details button img{
+    width:40px;
+    height: 40px;
+   
+}
+.signup-details button p{
+    font-weight: bold;
+    padding-left: 5px;
+    margin-top: -8px;
+}
+@media only screen and (max-width: 745px){
+    .signup-con{
+        width:70%;
+    }
+    .signup-img img{
+        width:50%;
+        height:50%;
+        object-fit: contain;
+    }
+}
+@media only screen and (max-width: 470px){
+    .signup-con{
+        width:100%;
+    }
+    .signup-img img{
+        width:50%;
+        height:50%;
+        object-fit: contain;
+    }
+}

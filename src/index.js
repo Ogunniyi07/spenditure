@@ -10,9 +10,11 @@ import {
   About,
   Contact,
   Services,
+  Sign,
   Blog,
   Posts,
   Post,
+  Signup,
 } from "./components";
 
 ReactDOM.render(
@@ -23,10 +25,12 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
-      <Route path="/blog" element={<Blog />}>
+      <Route path="/blog" element={<Blog />} >
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/sign" element={<Sign />} />
     </Routes>
     <Footer />
   </Router>,
