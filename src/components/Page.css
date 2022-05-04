@@ -1,0 +1,271 @@
+/* .homepage{
+    width:100%;
+    height:max-content;
+    display:flex;
+    flex-direction: row;
+}
+.navbar{
+    width:23%;
+    height:100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #1A2137;
+}
+.navbar .closeicons{
+    width:100%;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .closeicons img{
+    width:50%;
+    height:40%;
+}
+.menus ul{
+    width:100%;
+    height:max-content;
+    margin-top:20px;
+}
+.menus ul li{
+    width:100%;
+    height: 8vh;
+    margin-bottom:5px;
+}
+.menus ul a{
+    font-size: 18px;
+    color:#fff;
+    text-align: center;
+}
+.line{
+    width: 100%;
+    height:2vh;
+    display:flex;
+    flex-direction: row;
+} 
+.empty{
+    width: 20%;
+}
+.empty-line{
+    width: 80%;
+}
+.logout{
+    width:100%;
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+}
+.out{
+    width:100%;
+    height:12vh;
+}
+.log{
+    width:100%;
+    height:8vh;
+}
+.log h2{
+    text-align: center;
+    color:#fff;
+    font-size: 30px;
+}
+.firstpage{
+    width:70%;
+    height:100%;
+    margin-top:50px;
+    background: #ffffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainhome{
+    width:90%;
+    height:53vh;
+    border-radius: 20px;
+    padding:20px 20px;
+    display:flex;
+    flex-direction: row;
+    background: #1A2137;
+}
+.mainhome-text{
+    width: 45%;
+    height: 43vh;
+}
+.mainhome-text h2{
+    color:#fff;
+    font-size:35px;
+    margin-bottom:8px;
+}
+.mainhome-text p{
+    color: rgba(252, 252, 253, 0.5);
+    font-size:20px;
+}
+.mainhomebox{
+    width: 100%;
+    height: 25vh;
+    margin-top:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainhome-box{
+    width:160px;
+    height:160px;
+    background: #fff;
+    flex-shrink: 0;
+    border-radius:20px;
+}
+.mainhome-box .icon{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-top:20px;
+    margin-left:20px;
+    background: #41DC65;
+}
+.backward{
+    width:100%;
+    height:7vh;
+    padding-top:12px;
+    padding-left: 11px;
+}
+.mainhome-box .income{
+    width:100%;
+    height:30px;
+    margin-top:30px;
+}
+.mainhome-box .income p{
+    color:#1D2025;
+    margin-left:20px;
+    font-size: 18px;
+}
+.mainhome-box .amount{
+    width:100%;
+    height:30px;
+}
+.mainhome-box .amount p{
+    color:#41DC65;
+    font-weight: bold;
+    margin-left:20px;
+    font-size: 24px;
+}
+.mainhome-box .icon2{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-top:20px;
+    margin-left:20px;
+    background: #FF5460;
+}
+.mainhome-box .amount{
+    width:100%;
+    height:30px;
+}
+.mainhome-box .amount2 p{
+    color:#FF5460;
+    font-weight: bold;
+    margin-left:20px;
+    font-size: 24px;
+}
+.mainhome-cal{
+    width: 60%;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+}
+.mainhomecal-img{
+    width:100%;
+    height:25vh;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:10px;
+}
+.mainhomecal-img img{
+    width:30%;
+    height:90%;
+}
+
+.mainhome-cal .calendar{
+    width:90%;
+    height:25vh;
+    border-radius:20px;
+    margin-left:40px;
+    margin-top:10px;
+    display:flex;
+    flex-direction: row;
+    padding:20px 20px;
+    background-color: #3EC3D5;
+}
+.mainhome-cal .calendar .balance{
+    width:50%;
+    height:15vh;
+}
+.balance p{
+    font-size:15px;
+    color:#fff;
+}
+.balance h2{
+    line-height:120px;
+    font-size:43px;
+    color:#fff;
+}
+.mainhome-cal .calendar-cal{
+    width:50%;
+    height:15vh;
+    display:flex;
+    justify-content: end;
+}
+.mainhome-cal .calendar-cal img{
+    width:50%;
+    height:90%;
+}
+.homeactivities{
+    width: 100%;
+    height:50vh;
+    margin-top:25px;
+    padding:20px 50px;
+    display: flex;
+    flex-direction: row;
+    background: red;
+}
+.activities1{
+    width: 50%;
+    height:44vh;
+    background: #FF5460;
+}
+.activities1 input[type=text]{  
+    width:100%;
+    height: 70px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    border:1px solid #000000;
+}
+.recentactivities{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+.recent{
+    width: 80%;
+    height: 5vh;
+}
+.act{
+    width: 20%;
+    height: 5vh;
+}
+.act p{
+    font-size: 20px;
+}
+.recentactivities p{
+    font-weight:bold;
+}
+.lastpage{
+    width:7%;
+    height:100vh;
+    background: rgb(224, 223, 223);
+} */

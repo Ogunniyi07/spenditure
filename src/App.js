@@ -13,6 +13,7 @@ import {
   Services,
   Sign,
   Signup,
+  HomePage,
 } from "./components";
 
 ReactDOM.render(
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route path="/blog" element={<Blog />} />
       <Route path="/sign" element={<Sign />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/HomePage" element={<HomePage />} />
     </Routes>
   </Router>,
 

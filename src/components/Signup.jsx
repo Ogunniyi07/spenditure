@@ -6,20 +6,11 @@ function Signup() {
   return (
     <div className="signup" id="#signup">
       <div class="signup-container">
+      <div className="head">
+      <img src="/images/spenditure.png" alt="" />
+      <p>SPENDITURE</p>
+      </div>
           <div className="signup-con">
-            {/* <div className="signup-head">
-              <div className="title">
-                <NavLink className="signup-logo" to="/">
-                  <img src="/images/nav-logo.svg" alt="" />
-                </NavLink>
-              </div>
-              <div className="signin">
-                <a href="sign">SignIn</a>
-              </div>
-            </div>
-            <div className="signup-img">
-              <img src="/images/rafiki.png" alt="" />
-            </div> */}
             <div className="signup-text">
               <h2>Sign up to your account</h2>
               <p>Keep your financial data store to our server so that you can access from anywhere you want</p>

@@ -444,7 +444,7 @@ p a{
   font-size: 16px;
   font-weight: 100;
 }
-input[type=text]{
+.footer-box input[type=text]{
   width:100%;
   height: 40px;
   border-radius: 15px;
