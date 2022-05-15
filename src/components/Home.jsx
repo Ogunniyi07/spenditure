@@ -129,13 +129,14 @@ const [Slide, setSlide] = useState(false)
       {/* Testimonial Section */}
       <div className="testimonial">
         <h2>Testimonials</h2>
+        <marquee width="100%" direction="left" height="400px">
         <div className="test-grid">
         <div className="test-box">
           <div className="test-icons">
           <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
           </div>
           <div className="test-text">
-            <p>This is the best budgeting app i've ever used, it helps me plan all my spendings.</p>
+            <p>This is the best budgeting app <br/>i've ever used, it helps me plan <br/>all my spendings.</p>
           </div>
           <div className="test-img">
             <div className="img-circle">
@@ -149,7 +150,7 @@ const [Slide, setSlide] = useState(false)
           <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
           </div>
           <div className="test-text">
-            <p>A great application, deserves a 5-star</p>
+            <p>A great application, deserves <br/> a 5-star</p>
           </div>
           <div className="test-img">
             <div className="img-circle">
@@ -163,7 +164,7 @@ const [Slide, setSlide] = useState(false)
           <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
           </div>
           <div className="test-text">
-          <p>Since i started using this app, i've been able to save and allocate money better.</p>
+          <p>Since i started using this app, <br/>i've been able to save <br/>and allocate money better.</p>
           </div>
           <div className="test-img">
             <div className="img-circle">
@@ -177,7 +178,7 @@ const [Slide, setSlide] = useState(false)
           <i className="fa-star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></i>
           </div>
           <div className="test-text">
-          <p>Since i started using this app, i've been able to save and allocate money better.</p>
+          <p>Since i started using this app,<br/> i've been able to save <br/> and allocate money better.</p>
           </div>
           <div className="test-img">
             <div className="img-circle">
@@ -187,6 +188,8 @@ const [Slide, setSlide] = useState(false)
           </div>
         </div>
         </div>
+      </marquee>
+        
         {/* <div className="arrow"  onClick={() => setSlide(!Slide)}>
         <i className="Left-arrow"><FaArrowLeft /></i> : <i className="Right-arrow"><FaArrowRight /></i>
         </div> */}
